@@ -1,0 +1,3 @@
+[submodule "Foundations"]
+	path = Foundations
+	url = https://github.com/Lightricks/Foundations.git

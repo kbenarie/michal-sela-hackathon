@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1956EA1C235F1A9000BFC2CE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1956EA15235F1A6B00BFC2CE /* libOCMock.a */; };
+		19B731E423389C3300675185 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B532324E17D00B1996B /* libExpecta.a */; };
+		19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A262324CFB300B1996B /* BGRAppDelegate.mm */; };
+		19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A292324CFB300B1996B /* BGRViewController.mm */; };
+		19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A2E2324CFB500B1996B /* Assets.xcassets */; };
+		19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A302324CFB500B1996B /* LaunchScreen.storyboard */; };
+		19D54A352324CFB500B1996B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A342324CFB500B1996B /* main.m */; };
+		19D54B022324D4E200B1996B /* BGRViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */; };
+		19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
+		19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5A2324E34E00B1996B /* GLKit.framework */; };
+		19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5C2324E36500B1996B /* libextobjc_iOS.a */; };
+		19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5E2324E37700B1996B /* libcompression.tbd */; };
+		19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+		19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B632324E3A100B1996B /* QuartzCore.framework */; };
+		19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
+		19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B272324E0D900B1996B /* libSpectacle.a */; };
+		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1956EA10235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		1956EA12235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03565A3118F0566E003AE91E;
+			remoteInfo = OCMockTests;
+		};
+		1956EA14235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		1956EA16235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D31108AD1828DB8700737925;
+			remoteInfo = OCMockLibTests;
+		};
+		1956EA18235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0B950F11B0080BE00942C38;
+			remoteInfo = "OCMock iOS";
+		};
+		1956EA1A235F1A6B00BFC2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 817EB1621BD765130047E85A;
+			remoteInfo = "OCMock tvOS";
+		};
+		19D54A3B2324CFB500B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54A1A2324CFB300B1996B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D54A212324CFB300B1996B;
+			remoteInfo = Baygur;
+		};
+		19D54B262324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BC72B4B2292D9AF0007A5AA;
+			remoteInfo = Spectacle;
+		};
+		19D54B282324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD03AF52293292F006FE3D8;
+			remoteInfo = SpectacleTests;
+		};
+		19D54B2A2324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9DEC9622DF4885005EDACF;
+			remoteInfo = SpectacleRandomTests;
+		};
+		19D54B482324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379791A8B972C009844DA;
+			remoteInfo = Expecta;
+		};
+		19D54B4A2324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379111A8B9660009844DA;
+			remoteInfo = "Expecta-iOS";
+		};
+		19D54B4C2324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A598C1AD4418C003DA3E4;
+			remoteInfo = ExpectaTests;
+		};
+		19D54B4E2324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A59BF1AD441CB003DA3E4;
+			remoteInfo = "Expecta-iOSTests";
+		};
+		19D54B502324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = libExpecta;
+		};
+		19D54B522324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOS";
+		};
+		19D54B542324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C4416F917FF3F4A00978F09;
+			remoteInfo = libExpectaTests;
+		};
+		19D54B562324E17D00B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19D54B742324E50100B1996B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = ../Foundations/third_party/OCMock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
+		19D54A222324CFB300B1996B /* Baygur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baygur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D54A252324CFB300B1996B /* BGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRAppDelegate.h; sourceTree = "<group>"; };
+		19D54A262324CFB300B1996B /* BGRAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRAppDelegate.mm; sourceTree = "<group>"; };
+		19D54A282324CFB300B1996B /* BGRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRViewController.h; sourceTree = "<group>"; };
+		19D54A292324CFB300B1996B /* BGRViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRViewController.mm; sourceTree = "<group>"; };
+		19D54A2E2324CFB500B1996B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D54A312324CFB500B1996B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19D54A332324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D54A342324CFB500B1996B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19D54A3A2324CFB500B1996B /* BaygurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaygurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D54A402324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRViewControllerSpec.mm; sourceTree = "<group>"; };
+		19D54B052324DCF600B1996B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		19D54B062324DCF600B1996B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		19D54B072324DCF600B1996B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = ../Foundations/Configuration/Common.xcconfig; sourceTree = "<group>"; };
+		19D54B092324DCF600B1996B /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		19D54B0A2324DCF600B1996B /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		19D54B0B2324DCF600B1996B /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		19D54B0C2324DCF600B1996B /* Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
+		19D54B202324E0D900B1996B /* Spectacle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Spectacle.xcodeproj; path = ../Foundations/Spectacle/Spectacle.xcodeproj; sourceTree = "<group>"; };
+		19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = ../Foundations/third_party/Expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
+		19D54B582324E34100B1996B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19D54B5A2324E34E00B1996B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		19D54B5C2324E36500B1996B /* libextobjc_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libextobjc_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D54B5E2324E37700B1996B /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		19D54B612324E38E00B1996B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Prefix.pch"; sourceTree = "<group>"; };
+		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D54A1F2324CFB300B1996B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
+				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
+				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
+				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
+				19B731E423389C3300675185 /* libExpecta.a in Frameworks */,
+				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
+				19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A372324CFB500B1996B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */,
+				19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */,
+				1956EA1C235F1A9000BFC2CE /* libOCMock.a in Frameworks */,
+				19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1956EA08235F1A6B00BFC2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1956EA11235F1A6B00BFC2CE /* OCMock.framework */,
+				1956EA13235F1A6B00BFC2CE /* OCMockTests.xctest */,
+				1956EA15235F1A6B00BFC2CE /* libOCMock.a */,
+				1956EA17235F1A6B00BFC2CE /* OCMockLibTests.xctest */,
+				1956EA19235F1A6B00BFC2CE /* OCMock.framework */,
+				1956EA1B235F1A6B00BFC2CE /* OCMock.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D54A192324CFB300B1996B = {
+			isa = PBXGroup;
+			children = (
+				19D54A242324CFB300B1996B /* Baygur */,
+				19D54A3D2324CFB500B1996B /* BaygurTests */,
+				19D54B032324DBE900B1996B /* Configuration */,
+				19D54B0D2324E05800B1996B /* Frameworks */,
+				19D54A232324CFB300B1996B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19D54A232324CFB300B1996B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D54A222324CFB300B1996B /* Baygur.app */,
+				19D54A3A2324CFB500B1996B /* BaygurTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D54A242324CFB300B1996B /* Baygur */ = {
+			isa = PBXGroup;
+			children = (
+				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
+				19D54A252324CFB300B1996B /* BGRAppDelegate.h */,
+				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
+				19D54A282324CFB300B1996B /* BGRViewController.h */,
+				19D54A292324CFB300B1996B /* BGRViewController.mm */,
+				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
+				19D54A332324CFB500B1996B /* Info.plist */,
+				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
+				19D54A342324CFB500B1996B /* main.m */,
+			);
+			path = Baygur;
+			sourceTree = "<group>";
+		};
+		19D54A3D2324CFB500B1996B /* BaygurTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */,
+				19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */,
+				19D54A402324CFB500B1996B /* Info.plist */,
+			);
+			path = BaygurTests;
+			sourceTree = "<group>";
+		};
+		19D54B032324DBE900B1996B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B042324DCF600B1996B /* Configurations */,
+				19D54B082324DCF600B1996B /* Targets */,
+				19D54B072324DCF600B1996B /* Common.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		19D54B042324DCF600B1996B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B052324DCF600B1996B /* Debug.xcconfig */,
+				19D54B062324DCF600B1996B /* Release.xcconfig */,
+			);
+			name = Configurations;
+			path = ../Foundations/Configuration/Configurations;
+			sourceTree = "<group>";
+		};
+		19D54B082324DCF600B1996B /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B0A2324DCF600B1996B /* Application.xcconfig */,
+				19D54B0C2324DCF600B1996B /* Bundle.xcconfig */,
+				19D54B0B2324DCF600B1996B /* Framework.xcconfig */,
+				19D54B092324DCF600B1996B /* StaticLibrary.xcconfig */,
+			);
+			name = Targets;
+			path = ../Foundations/Configuration/Targets;
+			sourceTree = "<group>";
+		};
+		19D54B0D2324E05800B1996B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B582324E34100B1996B /* CoreGraphics.framework */,
+				19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */,
+				19D54B5A2324E34E00B1996B /* GLKit.framework */,
+				1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */,
+				19D54B632324E3A100B1996B /* QuartzCore.framework */,
+				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
+				19D54B612324E38E00B1996B /* UIKit.framework */,
+				19D54B5E2324E37700B1996B /* libcompression.tbd */,
+				19D54B5C2324E36500B1996B /* libextobjc_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19D54B212324E0D900B1996B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B272324E0D900B1996B /* libSpectacle.a */,
+				19D54B292324E0D900B1996B /* SpectacleTests.xctest */,
+				19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D54B3E2324E17D00B1996B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B492324E17D00B1996B /* Expecta.framework */,
+				19D54B4B2324E17D00B1996B /* Expecta.framework */,
+				19D54B4D2324E17D00B1996B /* ExpectaTests.xctest */,
+				19D54B4F2324E17D00B1996B /* Expecta-iOSTests.xctest */,
+				19D54B512324E17D00B1996B /* libExpecta.a */,
+				19D54B532324E17D00B1996B /* libExpecta.a */,
+				19D54B552324E17D00B1996B /* libExpectaTests.xctest */,
+				19D54B572324E17D00B1996B /* libExpecta-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D54A212324CFB300B1996B /* Baygur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D54A432324CFB500B1996B /* Build configuration list for PBXNativeTarget "Baygur" */;
+			buildPhases = (
+				19D54A1E2324CFB300B1996B /* Sources */,
+				19D54A1F2324CFB300B1996B /* Frameworks */,
+				19D54A202324CFB300B1996B /* Resources */,
+				19D54B742324E50100B1996B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Baygur;
+			productName = Baygur;
+			productReference = 19D54A222324CFB300B1996B /* Baygur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D54A392324CFB500B1996B /* BaygurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D54A462324CFB500B1996B /* Build configuration list for PBXNativeTarget "BaygurTests" */;
+			buildPhases = (
+				19D54A362324CFB500B1996B /* Sources */,
+				19D54A372324CFB500B1996B /* Frameworks */,
+				19D54A382324CFB500B1996B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D54A3C2324CFB500B1996B /* PBXTargetDependency */,
+			);
+			name = BaygurTests;
+			productName = BaygurTests;
+			productReference = 19D54A3A2324CFB500B1996B /* BaygurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D54A1A2324CFB300B1996B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Lightricks;
+				TargetAttributes = {
+					19D54A212324CFB300B1996B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					19D54A392324CFB500B1996B = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 19D54A212324CFB300B1996B;
+					};
+				};
+			};
+			buildConfigurationList = 19D54A1D2324CFB300B1996B /* Build configuration list for PBXProject "Baygur" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D54A192324CFB300B1996B;
+			productRefGroup = 19D54A232324CFB300B1996B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 19D54B3E2324E17D00B1996B /* Products */;
+					ProjectRef = 19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */;
+				},
+				{
+					ProductGroup = 1956EA08235F1A6B00BFC2CE /* Products */;
+					ProjectRef = 1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */;
+				},
+				{
+					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
+					ProjectRef = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				19D54A212324CFB300B1996B /* Baygur */,
+				19D54A392324CFB500B1996B /* BaygurTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1956EA11235F1A6B00BFC2CE /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 1956EA10235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1956EA13235F1A6B00BFC2CE /* OCMockTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.xctest;
+			remoteRef = 1956EA12235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1956EA15235F1A6B00BFC2CE /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 1956EA14235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1956EA17235F1A6B00BFC2CE /* OCMockLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockLibTests.xctest;
+			remoteRef = 1956EA16235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1956EA19235F1A6B00BFC2CE /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 1956EA18235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1956EA1B235F1A6B00BFC2CE /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 1956EA1A235F1A6B00BFC2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B272324E0D900B1996B /* libSpectacle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpectacle.a;
+			remoteRef = 19D54B262324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B292324E0D900B1996B /* SpectacleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectacleTests.xctest;
+			remoteRef = 19D54B282324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectacleRandomTests.xctest;
+			remoteRef = 19D54B2A2324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B492324E17D00B1996B /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = 19D54B482324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B4B2324E17D00B1996B /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = 19D54B4A2324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B4D2324E17D00B1996B /* ExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.xctest;
+			remoteRef = 19D54B4C2324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B4F2324E17D00B1996B /* Expecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.xctest";
+			remoteRef = 19D54B4E2324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B512324E17D00B1996B /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 19D54B502324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B532324E17D00B1996B /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 19D54B522324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B552324E17D00B1996B /* libExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libExpectaTests.xctest;
+			remoteRef = 19D54B542324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B572324E17D00B1996B /* libExpecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libExpecta-iOSTests.xctest";
+			remoteRef = 19D54B562324E17D00B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D54A202324CFB300B1996B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */,
+				19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A382324CFB500B1996B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D54A1E2324CFB300B1996B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */,
+				19D54A352324CFB500B1996B /* main.m in Sources */,
+				19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A362324CFB500B1996B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54B022324D4E200B1996B /* BGRViewControllerSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D54A3C2324CFB500B1996B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D54A212324CFB300B1996B /* Baygur */;
+			targetProxy = 19D54A3B2324CFB500B1996B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D54A302324CFB500B1996B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D54A312324CFB500B1996B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D54A412324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B052324DCF600B1996B /* Debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19D54A422324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B062324DCF600B1996B /* Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19D54A442324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "Baygur/Baygur-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Baygur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19D54A452324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "Baygur/Baygur-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Baygur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19D54A472324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "BaygurTests/BaygurTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/Spectacle",
+					"$(SRCROOT)/../Foundations/third_party/Expecta",
+					"$(SRCROOT)/../Foundations/third_party/OCMock/Source",
+				);
+				INFOPLIST_FILE = BaygurTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
+			};
+			name = Debug;
+		};
+		19D54A482324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "BaygurTests/BaygurTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/Spectacle",
+					"$(SRCROOT)/../Foundations/third_party/Expecta",
+					"$(SRCROOT)/../Foundations/third_party/OCMock/Source",
+				);
+				INFOPLIST_FILE = BaygurTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D54A1D2324CFB300B1996B /* Build configuration list for PBXProject "Baygur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A412324CFB500B1996B /* Debug */,
+				19D54A422324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D54A432324CFB500B1996B /* Build configuration list for PBXNativeTarget "Baygur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A442324CFB500B1996B /* Debug */,
+				19D54A452324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D54A462324CFB500B1996B /* Build configuration list for PBXNativeTarget "BaygurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A472324CFB500B1996B /* Debug */,
+				19D54A482324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D54A1A2324CFB300B1996B /* Project object */;
+}
