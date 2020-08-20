@@ -24,6 +24,8 @@
 		19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
 		19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B272324E0D900B1996B /* libSpectacle.a */; };
 		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+		89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */; };
+		89C08B2D24EEBB8400C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +201,8 @@
 		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Prefix.pch"; sourceTree = "<group>"; };
 		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
+		89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
 				19D54A342324CFB500B1996B /* main.m */,
+				89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */,
 			);
 			path = Baygur;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */,
 				19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */,
 				19D54A402324CFB500B1996B /* Info.plist */,
+				89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */,
 			);
 			path = BaygurTests;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 			files = (
 				19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */,
 				19D54A352324CFB500B1996B /* main.m in Sources */,
+				89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */,
 				19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C08B2D24EEBB8400C7D9E3 /* Dummy.swift in Sources */,
 				19D54B022324D4E200B1996B /* BGRViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
