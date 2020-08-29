@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  LTAssert(YES, @"dummy assertion to demostrate LTKit usage. No real need to assert here");
+  LTAssert(YES, @"dummy assertion to demonstrate LTKit usage. No real need to assert here");
 }
 
 @end
