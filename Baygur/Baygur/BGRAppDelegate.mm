@@ -12,8 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation BGRAppDelegate
 
+@synthesize window = _window;
+
 - (BOOL)application:(UIApplication __unused *)application
-    didFinishLaunchingWithOptions:(NSDictionary __unused *)launchOptions {
+    didFinishLaunchingWithOptions:(nullable NSDictionary __unused *)launchOptions {
   return YES;
 }
 

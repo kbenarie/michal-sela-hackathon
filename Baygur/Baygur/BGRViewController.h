@@ -5,6 +5,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// Application root view controller.
 @interface BGRViewController : UIViewController
 @end
 

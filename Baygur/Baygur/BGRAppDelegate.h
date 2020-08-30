@@ -5,10 +5,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// App delegate of Baygur.
 @interface BGRAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
 @end
 
 NS_ASSUME_NONNULL_END
