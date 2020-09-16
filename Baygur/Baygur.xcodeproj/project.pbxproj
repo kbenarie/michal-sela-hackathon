@@ -649,6 +649,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -660,6 +661,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
