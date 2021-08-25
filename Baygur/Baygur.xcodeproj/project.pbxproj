@@ -203,6 +203,8 @@
 		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
 		89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
+		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
+				94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */,
 				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
 				19D54A252324CFB300B1996B /* BGRAppDelegate.h */,
 				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
@@ -287,6 +290,7 @@
 		19D54A3D2324CFB500B1996B /* BaygurTests */ = {
 			isa = PBXGroup;
 			children = (
+				94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */,
 				19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */,
 				19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */,
 				89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */,
@@ -688,6 +692,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Baygur/Baygur-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -707,6 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Baygur/Baygur-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -727,6 +733,7 @@
 				INFOPLIST_FILE = BaygurTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaygurTests/BaygurTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
 			};
 			name = Debug;
@@ -748,6 +755,7 @@
 				INFOPLIST_FILE = BaygurTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaygurTests/BaygurTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
 			};
 			name = Release;
