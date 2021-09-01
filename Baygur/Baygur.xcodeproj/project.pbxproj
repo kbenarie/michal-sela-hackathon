@@ -212,11 +212,11 @@
 			files = (
 				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
 				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
+				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
+				19B731E423389C3300675185 /* libExpecta.a in Frameworks */,
+				19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */,
 				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
 				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
-				19B731E423389C3300675185 /* libExpecta.a in Frameworks */,
-				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
-				19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */,
-				19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */,
 				1956EA1C235F1A9000BFC2CE /* libOCMock.a in Frameworks */,
 				19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */,
+				19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +271,15 @@
 			isa = PBXGroup;
 			children = (
 				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
+				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
 				19D54A252324CFB300B1996B /* BGRAppDelegate.h */,
 				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
 				19D54A282324CFB300B1996B /* BGRViewController.h */,
 				19D54A292324CFB300B1996B /* BGRViewController.mm */,
-				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
+				89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */,
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
 				19D54A342324CFB500B1996B /* main.m */,
-				89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */,
 			);
 			path = Baygur;
 			sourceTree = "<group>";
@@ -287,10 +287,10 @@
 		19D54A3D2324CFB500B1996B /* BaygurTests */ = {
 			isa = PBXGroup;
 			children = (
-				19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */,
 				19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */,
-				19D54A402324CFB500B1996B /* Info.plist */,
+				19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */,
 				89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */,
+				19D54A402324CFB500B1996B /* Info.plist */,
 			);
 			path = BaygurTests;
 			sourceTree = "<group>";
@@ -333,12 +333,12 @@
 				19D54B582324E34100B1996B /* CoreGraphics.framework */,
 				19D54B3D2324E17D00B1996B /* Expecta.xcodeproj */,
 				19D54B5A2324E34E00B1996B /* GLKit.framework */,
+				19D54B5E2324E37700B1996B /* libcompression.tbd */,
+				19D54B5C2324E36500B1996B /* libextobjc_iOS.a */,
 				1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */,
 				19D54B632324E3A100B1996B /* QuartzCore.framework */,
 				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
 				19D54B612324E38E00B1996B /* UIKit.framework */,
-				19D54B5E2324E37700B1996B /* libcompression.tbd */,
-				19D54B5C2324E36500B1996B /* libextobjc_iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -647,7 +647,10 @@
 			baseConfigurationReference = 19D54B052324DCF600B1996B /* Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,7 +662,10 @@
 			baseConfigurationReference = 19D54B062324DCF600B1996B /* Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Foundations/third_party/libextobjc";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
