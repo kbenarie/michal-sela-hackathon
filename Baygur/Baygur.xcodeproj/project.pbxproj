@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		1956EA1C235F1A9000BFC2CE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1956EA15235F1A6B00BFC2CE /* libOCMock.a */; };
 		19B731E423389C3300675185 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B532324E17D00B1996B /* libExpecta.a */; };
-		19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A262324CFB300B1996B /* BGRAppDelegate.mm */; };
 		19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A2E2324CFB500B1996B /* Assets.xcassets */; };
 		19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A302324CFB500B1996B /* LaunchScreen.storyboard */; };
-		19D54A352324CFB500B1996B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A342324CFB500B1996B /* main.m */; };
 		19D54B022324D4E200B1996B /* BGRViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */; };
 		19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
 		19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5A2324E34E00B1996B /* GLKit.framework */; };
@@ -23,6 +21,7 @@
 		19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
 		19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B272324E0D900B1996B /* libSpectacle.a */; };
 		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+		5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DD74B1C4D262410127A96 /* AppDelegate.swift */; };
 		89C08B2D24EEBB8400C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */; };
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
 		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
@@ -173,12 +172,9 @@
 /* Begin PBXFileReference section */
 		1956EA07235F1A6B00BFC2CE /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = ../Foundations/third_party/OCMock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
 		19D54A222324CFB300B1996B /* Baygur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baygur.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		19D54A252324CFB300B1996B /* BGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRAppDelegate.h; sourceTree = "<group>"; };
-		19D54A262324CFB300B1996B /* BGRAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRAppDelegate.mm; sourceTree = "<group>"; };
 		19D54A2E2324CFB500B1996B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D54A312324CFB500B1996B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D54A332324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19D54A342324CFB500B1996B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19D54A3A2324CFB500B1996B /* BaygurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaygurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D54A402324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19D54B012324D4E200B1996B /* BGRViewControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRViewControllerSpec.mm; sourceTree = "<group>"; };
@@ -199,6 +195,7 @@
 		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Prefix.pch"; sourceTree = "<group>"; };
 		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
+		7F1DD74B1C4D262410127A96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		94A5AAC5274395FC007DFCEC /* BGRDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRDummy.h; sourceTree = "<group>"; };
 		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
@@ -272,16 +269,14 @@
 		19D54A242324CFB300B1996B /* Baygur */ = {
 			isa = PBXGroup;
 			children = (
+				7F1DD74B1C4D262410127A96 /* AppDelegate.swift */,
 				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
 				94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */,
 				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
-				19D54A252324CFB300B1996B /* BGRAppDelegate.h */,
-				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
 				94A5AAC5274395FC007DFCEC /* BGRDummy.h */,
 				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
-				19D54A342324CFB500B1996B /* main.m */,
 				E8495E1C32735E748F4C1040 /* ViewController.swift */,
 			);
 			path = Baygur;
@@ -609,9 +604,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
-				19D54A352324CFB500B1996B /* main.m in Sources */,
-				19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */,
 				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
+				5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
