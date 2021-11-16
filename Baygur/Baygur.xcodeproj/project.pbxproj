@@ -26,6 +26,7 @@
 		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
 		89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */; };
 		89C08B2D24EEBB8400C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */; };
+		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +204,8 @@
 		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
 		89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		94A5AAC5274395FC007DFCEC /* BGRDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRDummy.h; sourceTree = "<group>"; };
+		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
 		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,6 +280,8 @@
 				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
 				19D54A252324CFB300B1996B /* BGRAppDelegate.h */,
 				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
+				94A5AAC5274395FC007DFCEC /* BGRDummy.h */,
+				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
 				19D54A282324CFB300B1996B /* BGRViewController.h */,
 				19D54A292324CFB300B1996B /* BGRViewController.mm */,
 				89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */,
@@ -608,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
 				19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */,
 				19D54A352324CFB500B1996B /* main.m in Sources */,
 				89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */,
