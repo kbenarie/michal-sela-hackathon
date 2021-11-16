@@ -10,7 +10,6 @@
 		1956EA1C235F1A9000BFC2CE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1956EA15235F1A6B00BFC2CE /* libOCMock.a */; };
 		19B731E423389C3300675185 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B532324E17D00B1996B /* libExpecta.a */; };
 		19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A262324CFB300B1996B /* BGRAppDelegate.mm */; };
-		19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A292324CFB300B1996B /* BGRViewController.mm */; };
 		19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A2E2324CFB500B1996B /* Assets.xcassets */; };
 		19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A302324CFB500B1996B /* LaunchScreen.storyboard */; };
 		19D54A352324CFB500B1996B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D54A342324CFB500B1996B /* main.m */; };
@@ -24,9 +23,9 @@
 		19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
 		19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B272324E0D900B1996B /* libSpectacle.a */; };
 		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
-		89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */; };
 		89C08B2D24EEBB8400C7D9E3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */; };
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
+		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,8 +175,6 @@
 		19D54A222324CFB300B1996B /* Baygur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baygur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D54A252324CFB300B1996B /* BGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRAppDelegate.h; sourceTree = "<group>"; };
 		19D54A262324CFB300B1996B /* BGRAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRAppDelegate.mm; sourceTree = "<group>"; };
-		19D54A282324CFB300B1996B /* BGRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRViewController.h; sourceTree = "<group>"; };
-		19D54A292324CFB300B1996B /* BGRViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRViewController.mm; sourceTree = "<group>"; };
 		19D54A2E2324CFB500B1996B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D54A312324CFB500B1996B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D54A332324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,12 +199,12 @@
 		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Prefix.pch"; sourceTree = "<group>"; };
 		19D54B802324E81500B1996B /* BaygurTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Prefix.pch"; sourceTree = "<group>"; };
-		89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		89C08B2C24EEBB8400C7D9E3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		94A5AAC5274395FC007DFCEC /* BGRDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRDummy.h; sourceTree = "<group>"; };
 		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
 		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8495E1C32735E748F4C1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,12 +279,10 @@
 				19D54A262324CFB300B1996B /* BGRAppDelegate.mm */,
 				94A5AAC5274395FC007DFCEC /* BGRDummy.h */,
 				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
-				19D54A282324CFB300B1996B /* BGRViewController.h */,
-				19D54A292324CFB300B1996B /* BGRViewController.mm */,
-				89C08B0F24EEBB7500C7D9E3 /* Dummy.swift */,
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
 				19D54A342324CFB500B1996B /* main.m */,
+				E8495E1C32735E748F4C1040 /* ViewController.swift */,
 			);
 			path = Baygur;
 			sourceTree = "<group>";
@@ -614,10 +609,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
-				19D54A2A2324CFB300B1996B /* BGRViewController.mm in Sources */,
 				19D54A352324CFB500B1996B /* main.m in Sources */,
-				89C08B1024EEBB7500C7D9E3 /* Dummy.swift in Sources */,
 				19D54A272324CFB300B1996B /* BGRAppDelegate.mm in Sources */,
+				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
