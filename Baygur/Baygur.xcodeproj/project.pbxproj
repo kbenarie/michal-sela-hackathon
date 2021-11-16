@@ -462,6 +462,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19D54A432324CFB500B1996B /* Build configuration list for PBXNativeTarget "Baygur" */;
 			buildPhases = (
+				94D8382626D65C4100DED494 /* Run SwiftLint */,
 				19D54A1E2324CFB300B1996B /* Sources */,
 				19D54A1F2324CFB300B1996B /* Frameworks */,
 				19D54A202324CFB300B1996B /* Resources */,
@@ -480,6 +481,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19D54A462324CFB500B1996B /* Build configuration list for PBXNativeTarget "BaygurTests" */;
 			buildPhases = (
+				94D8382726D65CA900DED494 /* Run SwiftLint */,
 				19D54A362324CFB500B1996B /* Sources */,
 				19D54A372324CFB500B1996B /* Frameworks */,
 				19D54A382324CFB500B1996B /* Resources */,
@@ -753,6 +755,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94D8382626D65C4100DED494 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Foundations/Danger/resources/swiftlint --config ../Foundations/.swiftlint.yml\n";
+		};
+		94D8382726D65CA900DED494 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Foundations/Danger/resources/swiftlint --config ../Foundations/.swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19D54A1E2324CFB300B1996B /* Sources */ = {
