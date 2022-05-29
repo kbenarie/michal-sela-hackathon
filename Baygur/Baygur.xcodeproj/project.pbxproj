@@ -11,7 +11,6 @@
 		19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A302324CFB500B1996B /* LaunchScreen.storyboard */; };
 		19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
 		19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5A2324E34E00B1996B /* GLKit.framework */; };
-		19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5C2324E36500B1996B /* libextobjc_iOS.a */; };
 		19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5E2324E37700B1996B /* libcompression.tbd */; };
 		19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
 		19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B632324E3A100B1996B /* QuartzCore.framework */; };
@@ -149,7 +148,6 @@
 		19D54B202324E0D900B1996B /* Spectacle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Spectacle.xcodeproj; path = ../Foundations/Spectacle/Spectacle.xcodeproj; sourceTree = "<group>"; };
 		19D54B582324E34100B1996B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		19D54B5A2324E34E00B1996B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		19D54B5C2324E36500B1996B /* libextobjc_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libextobjc_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D54B5E2324E37700B1996B /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
 		19D54B612324E38E00B1996B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -173,9 +171,10 @@
 				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
 				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
-				19D54B5D2324E36500B1996B /* libextobjc_iOS.a in Frameworks */,
 				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
 				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
+				19B731E423389C3300675185 /* libExpecta.a in Frameworks */,
+				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
