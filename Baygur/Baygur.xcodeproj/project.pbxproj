@@ -21,6 +21,7 @@
 		850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */; };
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
 		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
+		B8E45A4B2856120800628963 /* libRedux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E45A462856120000628963 /* libRedux.a */; };
 		E026C91A246822DE129DCC81 /* Dummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = F687D0628F0BFCFC8885BE83 /* Dummy.mm */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
 			remoteInfo = "Nimble-tvOSTests";
+		};
+		B8E45A452856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4164A8F24D1AC3C00777E9D;
+			remoteInfo = Redux;
+		};
+		B8E45A472856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4164BE424D1AC7100777E9D;
+			remoteInfo = ReduxTests;
+		};
+		B8E45A492856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E453389924DC44460018050A;
+			remoteInfo = ReduxTestUtils;
 		};
 		C0497CA079C9AD5C5F4C9BEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -158,6 +180,7 @@
 		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
 		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8E45A3C2856120000628963 /* Redux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redux.xcodeproj; path = ../Foundations/Redux/Redux.xcodeproj; sourceTree = "<group>"; };
 		E8495E1C32735E748F4C1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Foundations/third_party/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		F687D0628F0BFCFC8885BE83 /* Dummy.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Dummy.mm; sourceTree = "<group>"; };
@@ -168,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E45A4B2856120800628963 /* libRedux.a in Frameworks */,
 				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
 				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
@@ -277,6 +301,7 @@
 				19D54B5E2324E37700B1996B /* libcompression.tbd */,
 				EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */,
 				19D54B632324E3A100B1996B /* QuartzCore.framework */,
+				B8E45A3C2856120000628963 /* Redux.xcodeproj */,
 				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
 				19D54B612324E38E00B1996B /* UIKit.framework */,
 			);
@@ -304,6 +329,16 @@
 				0F5C92EC8B5417A7AFE655B0 /* NimbleTests.xctest */,
 				53EF2E15C6C35096FD26551E /* Nimble.framework */,
 				57C42D2BBA8079630648C698 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8E45A3D2856120000628963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E45A462856120000628963 /* libRedux.a */,
+				B8E45A482856120000628963 /* ReduxTests.xctest */,
+				B8E45A4A2856120000628963 /* libReduxTestUtils.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +420,10 @@
 					ProjectRef = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
 				},
 				{
+					ProductGroup = B8E45A3D2856120000628963 /* Products */;
+					ProjectRef = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+				},
+				{
 					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
 					ProjectRef = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
 				},
@@ -452,6 +491,27 @@
 			fileType = wrapper.framework;
 			path = Nimble.framework;
 			remoteRef = 1E1073D3E62A8242BC706C12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A462856120000628963 /* libRedux.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRedux.a;
+			remoteRef = B8E45A452856120000628963 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A482856120000628963 /* ReduxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReduxTests.xctest;
+			remoteRef = B8E45A472856120000628963 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A4A2856120000628963 /* libReduxTestUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReduxTestUtils.a;
+			remoteRef = B8E45A492856120000628963 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		CC7A6EE3FA78E00ED12CA8FE /* SpectacleFocusedTests.xctest */ = {
