@@ -173,7 +173,6 @@
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
 				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
 				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
-				19B731E423389C3300675185 /* libExpecta.a in Frameworks */,
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +275,6 @@
 				19D54B582324E34100B1996B /* CoreGraphics.framework */,
 				19D54B5A2324E34E00B1996B /* GLKit.framework */,
 				19D54B5E2324E37700B1996B /* libcompression.tbd */,
-				19D54B5C2324E36500B1996B /* libextobjc_iOS.a */,
 				EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */,
 				19D54B632324E3A100B1996B /* QuartzCore.framework */,
 				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
@@ -290,8 +288,8 @@
 			children = (
 				19D54B272324E0D900B1996B /* libSpectacle.a */,
 				19D54B292324E0D900B1996B /* SpectacleTests.xctest */,
-				19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */,
 				CC7A6EE3FA78E00ED12CA8FE /* SpectacleFocusedTests.xctest */,
+				19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */,
 				E07D045715E80417864334BF /* libSpectacleTestUtils.a */,
 			);
 			name = Products;
@@ -383,12 +381,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
-					ProjectRef = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
-				},
-				{
 					ProductGroup = 93510AA10EFB472D466641A7 /* Products */;
 					ProjectRef = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
+					ProjectRef = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
