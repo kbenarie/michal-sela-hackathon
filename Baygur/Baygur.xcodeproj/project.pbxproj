@@ -22,6 +22,7 @@
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
 		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
 		B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B889177E285883E900936E69 /* HighScoreFetcher.swift */; };
+		B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */; };
 		B8E45A4B2856120800628963 /* libRedux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E45A462856120000628963 /* libRedux.a */; };
 		E026C91A246822DE129DCC81 /* Dummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = F687D0628F0BFCFC8885BE83 /* Dummy.mm */; };
 /* End PBXBuildFile section */
@@ -182,6 +183,7 @@
 		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B889177E285883E900936E69 /* HighScoreFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreFetcher.swift; sourceTree = "<group>"; };
+		B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+AddAction.swift"; sourceTree = "<group>"; };
 		B8E45A3C2856120000628963 /* Redux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redux.xcodeproj; path = ../Foundations/Redux/Redux.xcodeproj; sourceTree = "<group>"; };
 		E8495E1C32735E748F4C1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Foundations/third_party/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
+				B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */,
 				E8495E1C32735E748F4C1040 /* ViewController.swift */,
 			);
 			path = Baygur;
@@ -603,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */,
 				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
 				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
 				5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */,
