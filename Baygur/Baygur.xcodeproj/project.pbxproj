@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,22 @@
 		850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */; };
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
 		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
+		B409CB3D28A3BC02003C01D4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; platformFilter = ios; };
+		B409CB9628A43158003C01D4 /* HighestScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CB9528A43158003C01D4 /* HighestScorePresenter.swift */; };
+		B409CBAA28A43AEA003C01D4 /* HighestScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBA928A43AEA003C01D4 /* HighestScoreViewController.swift */; };
+		B409CBAC28A4E014003C01D4 /* HighScoreScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBAB28A4E014003C01D4 /* HighScoreScreenReducer.swift */; };
+		B409CBAE28A4E7F6003C01D4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBAD28A4E7F6003C01D4 /* AppState.swift */; };
+		B409CD5328A5187F003C01D4 /* HighScoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CD5228A5187F003C01D4 /* HighScoreObserver.swift */; };
+		B4B7D79428A121DE006C1B54 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; platformFilter = ios; };
+		B4B7D79528A121DE006C1B54 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B7D93A28A13F45006C1B54 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7D93928A13F45006C1B54 /* AppAction.swift */; };
+		B4B7D93C28A13F95006C1B54 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7D93B28A13F95006C1B54 /* AppReducer.swift */; };
+		B4D4DAB828A23B15000F1D98 /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DAB728A23B15000F1D98 /* AppPresenter.swift */; };
+		B4D4DABA28A24912000F1D98 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DAB928A24912000F1D98 /* BoardView.swift */; };
+		B4D4DDE828A3B32E000F1D98 /* libLTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D78F28A11CF2006C1B54 /* libLTKit.a */; };
+		B4D4DDEA28A3B3A7000F1D98 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D4DDE928A3B3A7000F1D98 /* MobileCoreServices.framework */; };
+		B4D4DDEC28A3B44E000F1D98 /* AppReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDEB28A3B44E000F1D98 /* AppReducerSpec.swift */; };
+		B4D4DDEE28A3B544000F1D98 /* AppState+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4DDED28A3B544000F1D98 /* AppState+TestUtils.swift */; };
 		B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B889177E285883E900936E69 /* HighScoreFetcher.swift */; };
 		B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */; };
 		B8E45A4B2856120800628963 /* libRedux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E45A462856120000628963 /* libRedux.a */; };
@@ -91,6 +107,48 @@
 			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
 			remoteInfo = "Nimble-tvOSTests";
 		};
+		B4B7D77D28A11C4F006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		B4B7D77F28A11C4F006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		B4B7D78628A11C5C006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		B4B7D78E28A11CF2006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B3DEBE418296B6100EA0C1A;
+			remoteInfo = LTKit;
+		};
+		B4B7D79028A11CF2006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B3DEBF418296B6100EA0C1A;
+			remoteInfo = LTKitTests;
+		};
+		B4B7D79228A11CF2006C1B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 194FF4FC1FA8BA77008879E7;
+			remoteInfo = LTKitTestUtils;
+		};
 		B8E45A452856120000628963 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
@@ -149,6 +207,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4B7D79528A121DE006C1B54 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +241,20 @@
 		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
 		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B409CB9528A43158003C01D4 /* HighestScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighestScorePresenter.swift; sourceTree = "<group>"; };
+		B409CBA928A43AEA003C01D4 /* HighestScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighestScoreViewController.swift; sourceTree = "<group>"; };
+		B409CBAB28A4E014003C01D4 /* HighScoreScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreScreenReducer.swift; sourceTree = "<group>"; };
+		B409CBAD28A4E7F6003C01D4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B409CD5228A5187F003C01D4 /* HighScoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreObserver.swift; sourceTree = "<group>"; };
+		B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Foundations/third_party/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LTKit.xcodeproj; path = ../Foundations/LTKit/LTKit.xcodeproj; sourceTree = "<group>"; };
+		B4B7D93928A13F45006C1B54 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		B4B7D93B28A13F95006C1B54 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		B4D4DAB728A23B15000F1D98 /* AppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
+		B4D4DAB928A24912000F1D98 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		B4D4DDE928A3B3A7000F1D98 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B4D4DDEB28A3B44E000F1D98 /* AppReducerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducerSpec.swift; sourceTree = "<group>"; };
+		B4D4DDED28A3B544000F1D98 /* AppState+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+TestUtils.swift"; sourceTree = "<group>"; };
 		B889177E285883E900936E69 /* HighScoreFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreFetcher.swift; sourceTree = "<group>"; };
 		B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+AddAction.swift"; sourceTree = "<group>"; };
 		B8E45A3C2856120000628963 /* Redux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redux.xcodeproj; path = ../Foundations/Redux/Redux.xcodeproj; sourceTree = "<group>"; };
@@ -196,12 +269,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E45A4B2856120800628963 /* libRedux.a in Frameworks */,
+				B4D4DDE828A3B32E000F1D98 /* libLTKit.a in Frameworks */,
 				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
+				B4D4DDEA28A3B3A7000F1D98 /* MobileCoreServices.framework in Frameworks */,
 				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
 				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
 				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
 				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
+				B4B7D79428A121DE006C1B54 /* SnapKit.framework in Frameworks */,
+				B409CB3D28A3BC02003C01D4 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +318,22 @@
 		19D54A242324CFB300B1996B /* Baygur */ = {
 			isa = PBXGroup;
 			children = (
+				B4B7D93928A13F45006C1B54 /* AppAction.swift */,
 				7F1DD74B1C4D262410127A96 /* AppDelegate.swift */,
-				B889177E285883E900936E69 /* HighScoreFetcher.swift */,
+				B4D4DAB728A23B15000F1D98 /* AppPresenter.swift */,
+				B4B7D93B28A13F95006C1B54 /* AppReducer.swift */,
+				B409CBAD28A4E7F6003C01D4 /* AppState.swift */,
 				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
 				94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */,
 				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
 				94A5AAC5274395FC007DFCEC /* BGRDummy.h */,
 				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
+				B4D4DAB928A24912000F1D98 /* BoardView.swift */,
+				B409CB9528A43158003C01D4 /* HighestScorePresenter.swift */,
+				B409CBA928A43AEA003C01D4 /* HighestScoreViewController.swift */,
+				B889177E285883E900936E69 /* HighScoreFetcher.swift */,
+				B409CD5228A5187F003C01D4 /* HighScoreObserver.swift */,
+				B409CBAB28A4E014003C01D4 /* HighScoreScreenReducer.swift */,
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
 				B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */,
@@ -259,10 +345,12 @@
 		19D54A3D2324CFB500B1996B /* BaygurTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4D4DDEB28A3B44E000F1D98 /* AppReducerSpec.swift */,
 				94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */,
 				F687D0628F0BFCFC8885BE83 /* Dummy.mm */,
 				19D54A402324CFB500B1996B /* Info.plist */,
 				8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */,
+				B4D4DDED28A3B544000F1D98 /* AppState+TestUtils.swift */,
 			);
 			path = BaygurTests;
 			sourceTree = "<group>";
@@ -302,12 +390,15 @@
 		19D54B0D2324E05800B1996B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4D4DDE928A3B3A7000F1D98 /* MobileCoreServices.framework */,
 				19D54B582324E34100B1996B /* CoreGraphics.framework */,
 				19D54B5A2324E34E00B1996B /* GLKit.framework */,
 				19D54B5E2324E37700B1996B /* libcompression.tbd */,
+				B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */,
 				EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */,
 				19D54B632324E3A100B1996B /* QuartzCore.framework */,
 				B8E45A3C2856120000628963 /* Redux.xcodeproj */,
+				B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */,
 				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
 				19D54B612324E38E00B1996B /* UIKit.framework */,
 			);
@@ -339,6 +430,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B4B7D77028A11C4F006C1B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */,
+				B4B7D78028A11C4F006C1B54 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4B7D78928A11CF2006C1B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4B7D78F28A11CF2006C1B54 /* libLTKit.a */,
+				B4B7D79128A11CF2006C1B54 /* LTKitTests.xctest */,
+				B4B7D79328A11CF2006C1B54 /* libLTKitTestUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B8E45A3D2856120000628963 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +475,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B4B7D78728A11C5C006C1B54 /* PBXTargetDependency */,
 			);
 			name = Baygur;
 			productName = Baygur;
@@ -422,12 +533,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B4B7D78928A11CF2006C1B54 /* Products */;
+					ProjectRef = B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */;
+				},
+				{
 					ProductGroup = 93510AA10EFB472D466641A7 /* Products */;
 					ProjectRef = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
 				},
 				{
 					ProductGroup = B8E45A3D2856120000628963 /* Products */;
 					ProjectRef = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+				},
+				{
+					ProductGroup = B4B7D77028A11C4F006C1B54 /* Products */;
+					ProjectRef = B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */;
 				},
 				{
 					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
@@ -497,6 +616,41 @@
 			fileType = wrapper.framework;
 			path = Nimble.framework;
 			remoteRef = 1E1073D3E62A8242BC706C12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = B4B7D77D28A11C4F006C1B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B7D78028A11C4F006C1B54 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = B4B7D77F28A11C4F006C1B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B7D78F28A11CF2006C1B54 /* libLTKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLTKit.a;
+			remoteRef = B4B7D78E28A11CF2006C1B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B7D79128A11CF2006C1B54 /* LTKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LTKitTests.xctest;
+			remoteRef = B4B7D79028A11CF2006C1B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B7D79328A11CF2006C1B54 /* libLTKitTestUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLTKitTestUtils.a;
+			remoteRef = B4B7D79228A11CF2006C1B54 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B8E45A462856120000628963 /* libRedux.a */ = {
@@ -606,10 +760,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B409CD5328A5187F003C01D4 /* HighScoreObserver.swift in Sources */,
 				B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */,
+				B4B7D93A28A13F45006C1B54 /* AppAction.swift in Sources */,
+				B4B7D93C28A13F95006C1B54 /* AppReducer.swift in Sources */,
 				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
 				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
+				B409CBAC28A4E014003C01D4 /* HighScoreScreenReducer.swift in Sources */,
 				5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */,
+				B4D4DABA28A24912000F1D98 /* BoardView.swift in Sources */,
+				B4D4DAB828A23B15000F1D98 /* AppPresenter.swift in Sources */,
+				B409CBAA28A43AEA003C01D4 /* HighestScoreViewController.swift in Sources */,
+				B409CBAE28A4E7F6003C01D4 /* AppState.swift in Sources */,
+				B409CB9628A43158003C01D4 /* HighestScorePresenter.swift in Sources */,
 				B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +781,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D4DDEC28A3B44E000F1D98 /* AppReducerSpec.swift in Sources */,
+				B4D4DDEE28A3B544000F1D98 /* AppState+TestUtils.swift in Sources */,
 				E026C91A246822DE129DCC81 /* Dummy.mm in Sources */,
 				850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */,
 			);
@@ -630,6 +795,11 @@
 			isa = PBXTargetDependency;
 			target = 19D54A212324CFB300B1996B /* Baygur */;
 			targetProxy = 19D54A3B2324CFB500B1996B /* PBXContainerItemProxy */;
+		};
+		B4B7D78728A11C5C006C1B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = B4B7D78628A11C5C006C1B54 /* PBXContainerItemProxy */;
 		};
 		FF03D2BD01C2C595E767AD10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -657,8 +827,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+					"$(SRCROOT)/../Foundations/LTKit",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -672,8 +843,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+					"$(SRCROOT)/../Foundations/LTKit",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

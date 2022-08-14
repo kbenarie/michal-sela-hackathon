@@ -2,3 +2,4 @@
 // Created by Maxim Grabarnik.
 
 #import "Baygur-Prefix.pch"
+#import "BGRDummy.h"
