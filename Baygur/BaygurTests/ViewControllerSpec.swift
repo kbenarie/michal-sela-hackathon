@@ -12,7 +12,7 @@ class ViewControllerSpec: Spec {
     // to test the initialization of the view controller (initializer isn't even overridden in the
     // code).
     it("should initialize") {
-      let viewController = ViewController()
+      let viewController = HomeScreenViewController()
       expect(viewController).notTo(beNil())
     }
   }

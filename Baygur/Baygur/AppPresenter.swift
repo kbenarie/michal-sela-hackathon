@@ -6,42 +6,16 @@ import Redux
 typealias ActionCallback<ActionType> = ((ActionType) -> Void)
 
 class AppPresenter: RDXObserver {
-  let viewController = ViewController()
+  let viewController = HomeScreenViewController()
   let actionCallback: ActionCallback<AppAction>
   private let highestScorePresenter: HighestScorePresenter
 
   init (actionCallback: @escaping ActionCallback<AppAction>) {
-    viewController.view.backgroundColor = UIColor.systemPink
+    viewController.view.backgroundColor = HomeScreenViewController.backgroundColor
     self.actionCallback = actionCallback
     self.highestScorePresenter = HighestScorePresenter(
       actionCallback: { actionCallback(.highScore($0)) }
     )
-    setupCellButtonsAction()
-    setupNewGameButtonAction()
-    setupHighScoreButtonAction()
-  }
-
-  func setupCellButtonsAction() {
-    for (index, button) in viewController.buttons.enumerated() {
-      button.lt_addAction { [weak self] in
-        guard let self = self else { return }
-        self.actionCallback(.userPressedCell(index))
-      }
-    }
-  }
-
-  func setupNewGameButtonAction() {
-    viewController.newGameButton.lt_addAction { [weak self] in
-      guard let self = self else { return }
-      self.actionCallback(.startNewGame)
-    }
-  }
-
-  func setupHighScoreButtonAction() {
-    viewController.highestScoresButton.lt_addAction { [weak self] in
-      guard let self = self else { return }
-      self.actionCallback(.highScoreButtonTapped)
-    }
   }
 
   func didUpdate(
@@ -63,17 +37,10 @@ class AppPresenter: RDXObserver {
           highestScorePresenter.moveOut()
     }
 
-    viewController.newGameButton.isHidden = currentPresentationState.shouldHideNewGameButton
-
-    if currentPresentationState.shouldStartNewGame {
-      viewController.resetXOButtons()
-      return
-    }
 
     guard let buttonSelected = currentPresentationState.buttonSelected,
           let imageName = currentPresentationState.imageName else {
       return
     }
-    self.viewController.setImageButton(buttonNumber: buttonSelected, imageName: imageName)
   }
 }

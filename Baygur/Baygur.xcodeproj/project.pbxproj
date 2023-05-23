@@ -20,13 +20,15 @@
 		5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DD74B1C4D262410127A96 /* AppDelegate.swift */; };
 		850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */; };
 		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
-		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
+		AD75BC61E908400023C561E3 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* HomeScreenViewController.swift */; };
 		B409CB3D28A3BC02003C01D4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; platformFilter = ios; };
 		B409CB9628A43158003C01D4 /* HighestScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CB9528A43158003C01D4 /* HighestScorePresenter.swift */; };
 		B409CBAA28A43AEA003C01D4 /* HighestScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBA928A43AEA003C01D4 /* HighestScoreViewController.swift */; };
 		B409CBAC28A4E014003C01D4 /* HighScoreScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBAB28A4E014003C01D4 /* HighScoreScreenReducer.swift */; };
 		B409CBAE28A4E7F6003C01D4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CBAD28A4E7F6003C01D4 /* AppState.swift */; };
 		B409CD5328A5187F003C01D4 /* HighScoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409CD5228A5187F003C01D4 /* HighScoreObserver.swift */; };
+		B41F9D082A1D0F4300EDD0C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41F9D072A1D0F4300EDD0C2 /* ChatViewController.swift */; };
+		B41F9D1C2A1D0FB400EDD0C2 /* TherapistsPoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41F9D1B2A1D0FB400EDD0C2 /* TherapistsPoolViewController.swift */; };
 		B4B7D79428A121DE006C1B54 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; platformFilter = ios; };
 		B4B7D79528A121DE006C1B54 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B7D77E28A11C4F006C1B54 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4B7D93A28A13F45006C1B54 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7D93928A13F45006C1B54 /* AppAction.swift */; };
@@ -246,6 +248,8 @@
 		B409CBAB28A4E014003C01D4 /* HighScoreScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreScreenReducer.swift; sourceTree = "<group>"; };
 		B409CBAD28A4E7F6003C01D4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B409CD5228A5187F003C01D4 /* HighScoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreObserver.swift; sourceTree = "<group>"; };
+		B41F9D072A1D0F4300EDD0C2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B41F9D1B2A1D0FB400EDD0C2 /* TherapistsPoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistsPoolViewController.swift; sourceTree = "<group>"; };
 		B4B7D76F28A11C4F006C1B54 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Foundations/third_party/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 		B4B7D78828A11CF2006C1B54 /* LTKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LTKit.xcodeproj; path = ../Foundations/LTKit/LTKit.xcodeproj; sourceTree = "<group>"; };
 		B4B7D93928A13F45006C1B54 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -258,7 +262,7 @@
 		B889177E285883E900936E69 /* HighScoreFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreFetcher.swift; sourceTree = "<group>"; };
 		B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+AddAction.swift"; sourceTree = "<group>"; };
 		B8E45A3C2856120000628963 /* Redux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redux.xcodeproj; path = ../Foundations/Redux/Redux.xcodeproj; sourceTree = "<group>"; };
-		E8495E1C32735E748F4C1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8495E1C32735E748F4C1040 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Foundations/third_party/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		F687D0628F0BFCFC8885BE83 /* Dummy.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Dummy.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,7 +341,9 @@
 				19D54A332324CFB500B1996B /* Info.plist */,
 				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
 				B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */,
-				E8495E1C32735E748F4C1040 /* ViewController.swift */,
+				E8495E1C32735E748F4C1040 /* HomeScreenViewController.swift */,
+				B41F9D072A1D0F4300EDD0C2 /* ChatViewController.swift */,
+				B41F9D1B2A1D0FB400EDD0C2 /* TherapistsPoolViewController.swift */,
 			);
 			path = Baygur;
 			sourceTree = "<group>";
@@ -761,11 +767,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B409CD5328A5187F003C01D4 /* HighScoreObserver.swift in Sources */,
+				B41F9D1C2A1D0FB400EDD0C2 /* TherapistsPoolViewController.swift in Sources */,
 				B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */,
 				B4B7D93A28A13F45006C1B54 /* AppAction.swift in Sources */,
 				B4B7D93C28A13F95006C1B54 /* AppReducer.swift in Sources */,
 				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
-				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
+				AD75BC61E908400023C561E3 /* HomeScreenViewController.swift in Sources */,
 				B409CBAC28A4E014003C01D4 /* HighScoreScreenReducer.swift in Sources */,
 				5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */,
 				B4D4DABA28A24912000F1D98 /* BoardView.swift in Sources */,
@@ -773,6 +780,7 @@
 				B409CBAA28A43AEA003C01D4 /* HighestScoreViewController.swift in Sources */,
 				B409CBAE28A4E7F6003C01D4 /* AppState.swift in Sources */,
 				B409CB9628A43158003C01D4 /* HighestScorePresenter.swift in Sources */,
+				B41F9D082A1D0F4300EDD0C2 /* ChatViewController.swift in Sources */,
 				B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
